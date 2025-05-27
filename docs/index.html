@@ -459,6 +459,7 @@
             border-collapse: collapse;
             overflow: auto;
         }
+
         /*---------------------------------------------------------------------*/
     </style>
     <!-- inline stylesheet files into the above <style> element -->
@@ -511,8 +512,9 @@
             speaker and finally the generated sample by applying the Voice Conversion.
         </p>
         <div>
-            <h3>Conversions</h3>
-            <p>The conversion is done for unseen source and target speakers from LibriSpeech test subset.</p>
+            <h2>Speaker conversion</h2>
+            <p>The conversion is done for unseen source and target speakers from <a
+                    href="https://www.openslr.org/12">LibriSpeech</a> test-clean subset.</p>
             <table>
                 <thead>
                     <tr>
@@ -520,7 +522,7 @@
                         <th colspan="6" style="border-bottom:1px solid #D3D3D3;">Targets</th>
                     </tr>
                     <tr>
-                        <th>   </th>
+                        <th> </th>
                         <th>672</th>
                         <th>1320</th>
                         <th>2830</th>
@@ -530,82 +532,242 @@
                     </tr>
                     <tr>
                         <th>Source</th>
-                        <th><audio name="672" controls preload="metadata" src="examples/672_reference.wav" type="audio/wav"></audio></th>
-                        <th><audio name="1320" controls preload="metadata" src="examples/1320_reference.wav" type="audio/wav"></audio></th>
-                        <th><audio name="2830" controls preload="metadata" src="examples/2830_reference.wav" type="audio/wav"></audio></th>
-                        <th><audio name="4446" controls preload="metadata" src="examples/4446_reference.wav" type="audio/wav"></audio></th>
-                        <th><audio name="8555" controls preload="metadata" src="examples/8555_reference.wav" type="audio/wav"></audio></th>
-                        <th><audio name="7127" controls preload="metadata" src="examples/7127_reference.wav" type="audio/wav"></audio></th>
+                        <th><audio name="672" controls preload="metadata" src="examples/672_reference.wav"
+                                type="audio/wav"></audio></th>
+                        <th><audio name="1320" controls preload="metadata" src="examples/1320_reference.wav"
+                                type="audio/wav"></audio></th>
+                        <th><audio name="2830" controls preload="metadata" src="examples/2830_reference.wav"
+                                type="audio/wav"></audio></th>
+                        <th><audio name="4446" controls preload="metadata" src="examples/4446_reference.wav"
+                                type="audio/wav"></audio></th>
+                        <th><audio name="8555" controls preload="metadata" src="examples/8555_reference.wav"
+                                type="audio/wav"></audio></th>
+                        <th><audio name="7127" controls preload="metadata" src="examples/7127_reference.wav"
+                                type="audio/wav"></audio></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><audio name="5105" controls preload="metadata" src="examples/5105-28240-0008_source.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_672.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_1320.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_2830.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_4446.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_8555.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_7127.wav" type="audio/wav"></audio></td>
+                        <td><audio name="5105" controls preload="metadata" src="examples/5105-28240-0008_source.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_672.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_1320.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_2830.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_4446.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_8555.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5105-28240-0008_converted_to_7127.wav"
+                                type="audio/wav"></audio></td>
                     </tr>
                     <tr>
-                        <td><audio name="5683" controls preload="metadata" src="examples/5683-32865-0004_source.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_672.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_1320.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_2830.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_4446.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_8555.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_7127.wav" type="audio/wav"></audio></td>
+                        <td><audio name="5683" controls preload="metadata" src="examples/5683-32865-0004_source.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_672.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_1320.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_2830.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_4446.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_8555.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/5683-32865-0004_converted_to_7127.wav"
+                                type="audio/wav"></audio></td>
                     </tr>
                     <tr>
-                        <td><audio name="7729" controls preload="metadata" src="examples/7729-102255-0002_source.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_672.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_1320.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_2830.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_4446.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_8555.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_7127.wav" type="audio/wav"></audio></td>
+                        <td><audio name="7729" controls preload="metadata" src="examples/7729-102255-0002_source.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_672.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_1320.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_2830.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_4446.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_8555.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7729-102255-0002_converted_to_7127.wav"
+                                type="audio/wav"></audio></td>
                     </tr>
                     <tr>
-                        <td><audio name="3729" controls preload="metadata" src="examples/3729-6852-0005_source.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_672.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_1320.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_2830.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_4446.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_8555.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_7127.wav" type="audio/wav"></audio></td>
+                        <td><audio name="3729" controls preload="metadata" src="examples/3729-6852-0005_source.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_672.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_1320.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_2830.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_4446.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_8555.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/3729-6852-0005_converted_to_7127.wav"
+                                type="audio/wav"></audio></td>
                     </tr>
                     <tr>
-                        <td><audio name="7021" controls preload="metadata" src="examples/7021-79730-0008_source.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_672.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_1320.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_2830.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_4446.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_8555.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_7127.wav" type="audio/wav"></audio></td>
+                        <td><audio name="7021" controls preload="metadata" src="examples/7021-79730-0008_source.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_672.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_1320.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_2830.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_4446.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_8555.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/7021-79730-0008_converted_to_7127.wav"
+                                type="audio/wav"></audio></td>
                     </tr>
                     <tr>
-                        <td><audio name="4507" controls preload="metadata" src="examples/4507-16021-0001_source.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_672.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_1320.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_2830.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_4446.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_8555.wav" type="audio/wav"></audio></td>
-                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_7127.wav" type="audio/wav"></audio></td>
+                        <td><audio name="4507" controls preload="metadata" src="examples/4507-16021-0001_source.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_672.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_1320.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_2830.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_4446.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_8555.wav"
+                                type="audio/wav"></audio></td>
+                        <td><audio controls preload="metadata" src="examples/4507-16021-0001_converted_to_7127.wav"
+                                type="audio/wav"></audio></td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-        
 
-   <h2 id=" license">
-                                License
-                                </h2>
-                                <p>
-                                    <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
-                                    Feel free to use any of the material in your own work, as long as you give us
-                                    appropriate credit by mentioning the title and author list of our paper.
-                                </p>
+            <h2>Emotion conversion </h2>
+            <p>The conversion is done for the speaker 0013 in <a
+                    href="https://github.com/HLTSingapore/Emotional-Speech-Data">Emotional Speech Dataset.</a></p>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sample ID</th>
+                        <th>Original</th>
+                        <th>Converted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sample 000301</td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Neutral_0013_000301.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Neutral</div>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Neutral_Angry_0013_000301.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Angry</div>
+                        </td>
+                    </tr>
+                    <!-- Add more samples as needed -->
+                    <tr>
+                        <td>Sample 000302</td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Neutral_0013_000302.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Neutral</div>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Neutral_Angry_0013_000302.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Angry</div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Sample 000303</td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Neutral_0013_000303.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Neutral</div>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Neutral_Sad_0013_000303.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Sad</div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>Sample 001352</td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Sad_0013_001352.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Sad</div>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Sad_Angry_0013_001352.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Angry</div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>Sample 001355</td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Sad_0013_001355.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Sad</div>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="examples_emotion/Sad_Surprise_0013_001355.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div>Emotion: Surprise</div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+            <h2 id=" license">
+                License
+            </h2>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
+                Feel free to use any of the material in your own work, as long as you give us
+                appropriate credit by mentioning the title and author list of our paper.
+            </p>
         </div>
         <div class="n-footer">
         </div>
